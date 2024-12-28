@@ -1,24 +1,28 @@
 ## About
 
 Simple CLI application to check multiple bets on the Mega-Sena lottery. Written in TS with the Deno runtime.
-This project is just a fun experiment to mess around with Deno (and check all BOLÃO DO TRABALHO™ bets at once, of course).
+
+This project is just a fun experiment to mess around with Deno (and check all BOLÃO DA FIRMA™ bets at once, of course).
 
 ## Usage
 
 Install Deno.
 
-Run `deno index.ts --draw <draw> [options]`.
+Run `deno index.ts --d <draw> [options]`.
 
 You must either provide a bet with the `-b` flag or a .txt file with all the bets you wish to compare.
 
+You can also directly provide the draw without any flags. In this case, the script will search for a `bets.txt` in the root folder.
+
 ```
 Examples:
-deno index.ts -d 1,2,3,4,5,6 -b 1,2,3,4,5,6
+deno index.ts 1,2,3,4,5,6
 deno index.ts -d 1,2,3,4,5,6 -f bets.txt
+deno index.ts -d 1,2,3,4,5,6 -b 1,2,3,4,5,6
 
 Options:
-  -d, --draw <draw>		  Provide the draw to compare (ex: 1,2,3,4,5,6) (required)
-  -b, --bet <bet>        Specify a bet directly in the command line (ex: 1,2,3,4,5,6)
+  -d, --draw <draw>		    Provide the draw to compare (ex: 1,2,3,4,5,6) (required)
+  -b, --bet <bet>         Specify a bet directly in the command line (ex: 1,2,3,4,5,6)
   -f, --file <file>       Specify a file containing bets (default: 'bets.txt')
   -h, --help              Display this help message
 
