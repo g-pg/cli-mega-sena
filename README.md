@@ -15,8 +15,9 @@ You can also directly provide the draw without any flags. In this case, the scri
 
 ```
 Examples:
-deno index.ts -d 1,2,3,4,5,6 -b 1,2,3,4,5,6
+deno index.ts 1,2,3,4,5,6
 deno index.ts -d 1,2,3,4,5,6 -f bets.txt
+deno index.ts -d 1,2,3,4,5,6 -b 1,2,3,4,5,6
 
 Options:
   -d, --draw <draw>		  Provide the draw to compare (ex: 1,2,3,4,5,6) (required)
