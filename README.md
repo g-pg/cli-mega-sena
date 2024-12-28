@@ -7,7 +7,7 @@ This project is just a fun experiment to mess around with Deno (and check all BO
 
 Install Deno.
 
-Run `deno index.ts --draw <draw> [options]`.
+Run `deno index.ts --d <draw> [options]`.
 
 You can directly provide the draw without any flags. In this case, the script will search for a `bets.txt` in the root folder.
 
