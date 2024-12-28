@@ -9,9 +9,9 @@ Install Deno.
 
 Run `deno index.ts --d <draw> [options]`.
 
-You can directly provide the draw without any flags. In this case, the script will search for a `bets.txt` in the root folder.
-
 You must either provide a bet with the `-b` flag or a .txt file with all the bets you wish to compare.
+
+You can also directly provide the draw without any flags. In this case, the script will search for a `bets.txt` in the root folder.
 
 ```
 Examples:
