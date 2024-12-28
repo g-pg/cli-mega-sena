@@ -64,8 +64,8 @@ function parseDraw(draw: string) {
 }
 
 export function checkBet(bet: Bet, draw: Set<number>): Prize | null {
-	if (bet.length < 6) {
-		console.error(`Bet ${bet.join(", ")} has less than 6 numbers`);
+	if (bet.length < 6 || bet.length > 20) {
+		console.error(`Bet ${bet.join(", ")} must be between 6 and 20 numbers`);
 		return null;
 	}
 
