@@ -20,8 +20,8 @@ deno index.ts -d 1,2,3,4,5,6 -f bets.txt
 deno index.ts -d 1,2,3,4,5,6 -b 1,2,3,4,5,6
 
 Options:
-  -d, --draw <draw>		  Provide the draw to compare (ex: 1,2,3,4,5,6) (required)
-  -b, --bet <bet>        Specify a bet directly in the command line (ex: 1,2,3,4,5,6)
+  -d, --draw <draw>		    Provide the draw to compare (ex: 1,2,3,4,5,6) (required)
+  -b, --bet <bet>         Specify a bet directly in the command line (ex: 1,2,3,4,5,6)
   -f, --file <file>       Specify a file containing bets (default: 'bets.txt')
   -h, --help              Display this help message
 
