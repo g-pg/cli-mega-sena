@@ -162,7 +162,7 @@ export function parseFlags(args: string[]): ActiveFlags | null {
 
 	try {
 		if (args.length === 0) {
-			console.error("Incorrect parameters. Use --help/-h.");
+			console.error("Incorrect options. Use --help/-h.");
 			Deno.exit(1);
 		}
 
@@ -174,7 +174,10 @@ export function parseFlags(args: string[]): ActiveFlags | null {
 			const arg = args[i].replaceAll("-", "");
 			const flag = flags.find((f) => f.flag === arg || f.alias === arg);
 
-			if (flag === undefined) continue;
+			if (flag === undefined) {
+				console.error(`Unknown option '${args[i]}'. Use --help/-h.`);
+				Deno.exit(1);
+			}
 
 			if (flag.type === "boolean") {
 				activeFlags[flag.flag] = true;
