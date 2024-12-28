@@ -81,9 +81,8 @@ export function checkBet(bet: Bet, draw: Set<number>): Prize | null {
 }
 
 export function checkAllBets(bets: Bet[], draw: Set<number>) {
-	if (activeFlags?.verbose) {
-		console.log(`Checking ${bets.length} bets...\n`);
-	}
+	console.log(`Checking ${bets.length} bets against ${Array.from(draw).join(" ")}\n`);
+
 	let wonCount = 0;
 
 	for (const bet of bets) {
