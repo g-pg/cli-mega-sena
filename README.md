@@ -1,7 +1,7 @@
 ## About
 
 Simple CLI application to check multiple bets on the Mega-Sena lottery. Written in TS with the Deno runtime.
-This project is just a fun experiment to mess around with Deno (and check all BOLÃO DO TRABALHO™ bets at once, of course).
+This project is just a fun experiment to mess around with Deno (and check all BOLÃO DA FIRMA™ bets at once, of course).
 
 ## Usage
 
