@@ -185,12 +185,13 @@ export function parseFlags(args: string[]): ActiveFlags | null {
 
 			if (flag.type === "value") {
 				const value = args[i + 1];
-				if (value === undefined) {
+				if (value === undefined || value.startsWith("-")) {
 					console.error(`Must provide a value for ${arg} flag. Use --help/-h.`);
 					Deno.exit(1);
 				}
 
 				activeFlags[flag.flag] = value;
+				i++;
 			}
 		}
 
